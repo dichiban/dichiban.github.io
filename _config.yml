@@ -19,11 +19,11 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email: 
-  facebook: 
+  facebook: https://www.facebook.com/daiki.ichiyama#
   flickr:
   github: https://github.com/dichiban
   instagram:
-  linkedin: https://www.linkedin.com/in/daiki-ichiyama-1070aab8/
+  linkedin: www.linkedin.com/in/daiki-ichiyama
   pinterest:
   rss: # just type anything here for a working RSS icon
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
