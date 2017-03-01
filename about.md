@@ -16,7 +16,7 @@ my passion lies within software development.
 
 ### More Information
 
-Please feel free to contact me if you have any queries or offeres.
+Please feel free to contact me if you have any queries or offers.
 
 ### Contact me
 [daiki.ichiyama@gmail.com](mailto:daiki.ichiyama@gmail.com)
