@@ -10,7 +10,7 @@ I'm an undergraduate student studying at Queensland University of Technology cur
 Since I was a child, I have been fascinated with the field of Information Technology and have decided to persue a career in
 subject. Over the past few years I have been expanding my field of view in this area and have come to a realisation that 
 my passion lies within software development.
-<div style="text-align: justify">
+</div>
 
 
 
