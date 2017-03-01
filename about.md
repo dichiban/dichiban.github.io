@@ -3,14 +3,18 @@ layout: page
 title: About
 permalink: /about/
 ---
-<link rel="shortcut icon" href="images/favicon.ico">
-I'm an undergrad student studying at Queensland University of Technology currently in my penultimate year.
 
+I'm an undergraduate student studying at Queensland University of Technology currently in my penultimate year.
+Since I was a child, I have been fascinated with the field of Information Technology and have decided to persue a career in
+subject. Over the past few years I have been expanding my field of view in this area and have come to a realisation that 
+my passion lies within software development.
+
+```
 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Please feel free to contact me if you have any queries or offeres.
 
 ### Contact me
 [daiki.ichiyama@gmail.com](mailto:daiki.ichiyama@gmail.com)
