@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
+<link rel="shortcut icon" href="images/favicon.ico">
 I'm an undergrad student studying at Queensland University of Technology currently in my penultimate year.
 
 
