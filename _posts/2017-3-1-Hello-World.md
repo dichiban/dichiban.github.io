@@ -2,9 +2,12 @@
 layout: post
 title: Hey, What's up!
 ---
-<link rel="shortcut icon" href="images/favicon.ico">
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+Hey for any of those visiting this profile for the first time, my name is Daiki! I'm currently trying to build up multiple resources to publicise myself for 
+the future. You can find my email, Facebook, Github, and LinkedIn links in the footer below. Hopefully I will be submitting posts ranging from technical views 
+on projects I'm working on or just random rambles from time to time on this website but there are no guarantees!
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+
+![_config.yml]({{ site.baseurl }}/images/post1.png)
+
+Please feel free to contact me at any time!
