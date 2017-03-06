@@ -9,11 +9,14 @@ online order from 6pm. I watched as he failed to grab a pair and thought to myse
 I write a script to aid his purchase?" and decided to write a python script that utilises the 
 Selenium module. 
 
-The only problem I have faced so far is the speed at which some of the </div>`click()`<div style="text-align: justify">occur. It may have to do with the limitations of Selenium or there may be an issue in the way I am retrieving the 
+The only problem I have faced so far is the speed at which some of the 
+</div>
+`click()`
+<div style="text-align: justify">occur. It may have to do with the limitations of Selenium or there may be an issue in the way I am retrieving the 
 html elements.
 </div>
 
-
+`click()`
 Follow my progress on [Github](https://github.com/dichiban/pythSeleniumShoe)
 
 
