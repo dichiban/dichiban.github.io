@@ -9,6 +9,4 @@ the future. You can find my email, Facebook, Github, and LinkedIn links in the f
 on projects I'm working on or just random rambles from time to time on this website!
 </div>
 
-![_config.yml]({{ site.baseurl }}/images/post1.png)
-
 Please feel free to contact me at any time!
