@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 
-<div style="text-align: justify">
+<div style="text-align: justify" markdown="1">
 hello.
 
 - I like photography
