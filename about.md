@@ -6,8 +6,9 @@ permalink: /about/
 
 
 <div style="text-align: justify">
+hello.
 
-- I like Photography
+- I like photography
 - I like gaming
 - I like fishing
 - I like cooking
