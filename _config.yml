@@ -18,12 +18,12 @@ name: Daiki Ichiyama
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: daiki.ichiyama@gmail.com
+  # email: daiki.ichiyama@gmail.com
   facebook: 
   flickr:
-  github: dichiban
+  # github: dichiban
   instagram:
-  linkedin: daiki-ichiyama
+  # linkedin: daiki-ichiyama
   pinterest:
   rss: # just type anything here for a working RSS icon
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
