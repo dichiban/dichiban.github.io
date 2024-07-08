@@ -6,10 +6,12 @@ permalink: /about/
 
 
 <div style="text-align: justify">
+
 - I like Photography
 - I like gaming
 - I like fishing
 - I like cooking
+  
 </div>
 
 
