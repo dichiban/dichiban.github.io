@@ -308,6 +308,21 @@ table tbody tr:nth-child(odd) {
 	background-color: #ffffff;
 }
 
+// Triple images
+.image-container {
+  text-align: center; /* Center align children */
+}
+
+
+.image-container img {
+  display: inline-block; /* Display images as inline-block */
+  max-width: 100%; /* Ensure images do not exceed container width */
+  margin: 0 5px; /* Adjust margin as needed */
+}
+
+.triple {
+  width:204px;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
