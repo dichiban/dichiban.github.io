@@ -255,6 +255,12 @@ void runEncryption() {
 
 - The 3 LSB in the image above can be used to add data to the image without affecting how the image looks to the human eye
 
+{% picture jpt-webp images/binary_operations/red_192.ppm %}
+
+- Above picture represents a red 500 x 100 red image where every pixel is between 192 0 0 (11000000 0000000 0000000) and 255 0 0 
+
+- You can start to see some artifacts in the data as the more data you store 
+
 <h3>FAQ</h3>
 
 <h4>Why is there even and odd parity?</h4>
@@ -293,5 +299,7 @@ def write_color(filename, r_value):
 write_color("red_255.ppm", 255)
 # 0b11111000 = 248
 write_color("red_248.ppm", 248)
+# 0b11000000 = 192
+write_color("red_192.ppm", 192)
 ```
 </div>
