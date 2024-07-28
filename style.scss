@@ -285,7 +285,9 @@ footer {
 
 table {
 	border-collapse: collapse;
-    font-family: Tahoma, Geneva, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 table td {
 	padding: 15px;
@@ -322,6 +324,17 @@ table tbody tr:nth-child(odd) {
 
 .triple {
   width:204px;
+}
+
+.center {
+  text-align: center;
+}
+
+.centerbold {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.2;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
