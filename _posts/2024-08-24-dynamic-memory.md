@@ -10,11 +10,13 @@ excerpt: What is dynamic memory
 <h4>Dynamic Memory</h4>
 
 - Size is unkown and allocated at run time
+- Uses the heap
 - Can be assigned using **new** operator or using containers like **std::vector** in C++
 
 <h4>Static Memory</h4>
 
 - Size is known and allocated at compile time
+- Uses the stack
 
 <h4>Pointer</h4>
 
