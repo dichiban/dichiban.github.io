@@ -316,14 +316,20 @@ table tbody tr:nth-child(odd) {
 }
 
 
-.image-container img {
+.image-container img figure {
   display: inline-block; /* Display images as inline-block */
   max-width: 100%; /* Ensure images do not exceed container width */
   margin: 0 5px; /* Adjust margin as needed */
 }
 
 .triple {
-  width:204px;
+  display: inline-block;
+  width: 30%;
+}
+
+.double {
+  display: inline-block;
+  width: 45%;
 }
 
 .center {
