@@ -7,7 +7,7 @@
                 "type": "activity",
                 "name": "Forest Adventure NAGANO",
                 "address": "2471-608 Ageya, Nagano, 380-0888, Japan",
-                "date": "2025-04-24"           
+                "startDate": "2025-04-24"           
             },
             "geometry": {
                 "type": "Point",
@@ -20,7 +20,7 @@
                 "type": "activity",
                 "name": "Jigokudani Yaen Koen",
                 "address": "6845 Yamanouchi-machi Shimotakai-gun Nagano Japan 381-0401",
-                "date": "2025-04-23"
+                "startDate": "2025-04-23"
             },
             "geometry": {
                 "type": "Point",

@@ -353,6 +353,72 @@ table tbody tr:nth-child(odd) {
   float:left;
 }
 
+details {
+  margin: 0 auto;
+  background: #c0c0c0;;
+  margin-bottom: .5rem;
+  border-radius: 5px;
+  color: black;
+  outline: none;
+  cursor: pointer;
+}
+
+summary {
+  padding: 1rem;
+  display: block;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+details[open] summary {
+   background: #a5a5a5;
+}
+
+details:focus,
+details:hover,
+details:active {
+  background: #919191;
+}
+
+summary:focus,
+summary:hover,
+summary:active {
+  background: none;
+}
+
+
+.accom-collapse {
+  background: #ff9b44;
+}
+
+.accom-collapse[open] .accom-summary {
+  background: #ff7800;
+}
+
+.accom-collapse:focus,
+.accom-collapse:hover,
+.accom-collapse:active {
+  background: #fd851b;
+  border-radius: 20px;
+}
+
+
+.activity-collapse {
+  background: #7fa6f0;
+}
+
+.activity-collapse[open] .activity-summary {
+  background: #3479fa;
+}
+
+.activity-collapse:focus,
+.activity-collapse:hover,
+.activity-collapse:active {
+  background: #588ef3;
+}
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";

@@ -21,7 +21,7 @@ var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/re
 
 Esri_WorldStreetMap.addTo(map);
 var accomodation = {{ site.data.locations.2025-japan.accomodation.features | sort: 'properties.startDate' | jsonify }}
-var activity     = {{ site.data.locations.2025-japan.activity.features     | sort: 'properties.date'      | jsonify }}
+var activity     = {{ site.data.locations.2025-japan.activity.features     | sort: 'properties.startDate' | jsonify }}
 
 const pathCoords = [];
 accomodation.forEach(location => {
@@ -83,28 +83,28 @@ const activityMarkers = {};
 
 <!-- {{ site.data.locs | inspect }}
 {{ site.data.locations.2025-japan.accomodation | inspect }} -->
-## Accomodation
 
-{% assign sorted_accomodation = site.data.locations.2025-japan.accomodation.features | sort: 'properties.startDate' %}
-{% for feature in sorted_accomodation %}
+hello
+{% assign data1 = site.data.locations.2025-japan.accomodation.features %}
+{% assign data2 = site.data.locations.2025-japan.activity.features %}
+{% assign combined_data = data1 | concat: data2 %}
+{% assign sorted_data = combined_data | sort: "properties.startDate" %}
+{% for feature in sorted_data %}
+{% if "accomodation" == feature.properties.type %}
 <details class="accom-collapse" collapse-id="{{ feature.properties.name }}">
-  <summary>{{ feature.properties.name }}<div class="right">{{ feature.properties.startDate | date: "%d %B, %Y" }} - {{ feature.properties.endDate | date: "%d %B, %Y" }}</div></summary>
+  <summary class="accom-summary">{{ feature.properties.name }}<div class="right">{{ feature.properties.startDate | date: "%d %B, %Y" }} - {{ feature.properties.endDate | date: "%d %B, %Y" }}</div></summary>
   <div class="accom-item" data-id="{{ feature.properties.name }}">
   <div>Address : {{ feature.properties.address }}</div>
   <div>Check-in : {{ feature.properties.checkIn }}</div>
   <div>Check-out : {{ feature.properties.checkOut }}</div>
   </div>
 </details>
-{% endfor %}
-
-## Activity
-
-{% assign sorted_activity = site.data.locations.2025-japan.activity.features | sort: 'properties.date' %}
-{% for feature in sorted_activity %}
+{% elsif "activity" == feature.properties.type %}
 <details class="activity-collapse" collapse-id="{{ feature.properties.name }}">
-  <summary>{{ feature.properties.name }}<div class="right">{{ feature.properties.date | date: "%d %B, %Y" }}</div></summary>
+  <summary class="activity-summary">{{ feature.properties.name }}<div class="right">{{ feature.properties.startDate | date: "%d %B, %Y" }}</div></summary>
   <div class="activity-item" data-id="{{ feature.properties.name }}">Address : {{ feature.properties.address }}</div>
 </details>
+{% endif %}
 {% endfor %}
 
 <script>
@@ -156,23 +156,17 @@ function highlightLocation(marker, itemId) {
   });
 
   // Highlight the corresponding HTML element
-  var item = document.querySelector(`.accom-item[data-id="${itemId}"]`);
+  var item = document.querySelector(`.accom-collapse[collapse-id="${itemId}"]`);
   if (item) {
-    item.style.backgroundColor = 'lightblue';
-  }
-
-  item = document.querySelector(`.activity-item[data-id="${itemId}"]`);
-  if (item) {
-    item.style.backgroundColor = 'lightblue';
-  }
-
-  item = document.querySelector(`.accom-collapse[collapse-id="${itemId}"]`);
-  if (item) {
+     var elem = document.querySelector(`.accom-item[data-id="${itemId}"]`);
+     elem.style.background = "#fd851b";
      item.setAttribute('open',true);
   }
 
   item = document.querySelector(`.activity-collapse[collapse-id="${itemId}"]`);
   if (item) {
+     var elem = document.querySelector(`.activity-item[data-id="${itemId}"]`);
+     elem.style.background = "#3479fa";
      item.setAttribute('open',true);
   }
 }
@@ -183,6 +177,7 @@ accomodation.forEach(location => {
      accomMarkerOptions).addTo(map)
      accomMarkers[location.properties.name] = marker
        // Add a click event listener to the marker
+     marker.bindPopup(location.properties.name);
      marker.on('click', () => {
           // Reset all markers and location styles
           resetMarkersStyles();
@@ -198,6 +193,7 @@ activity.forEach(location => {
      activityMarkerOptions).addTo(map)
      activityMarkers[location.properties.name] = marker
        // Add a click event listener to the marker
+     marker.bindPopup(location.properties.name);
      marker.on('click', () => {
           // Reset all markers and location styles
           resetMarkersStyles();
