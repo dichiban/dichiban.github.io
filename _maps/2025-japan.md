@@ -31,7 +31,7 @@ accomodation.forEach(location => {
 
 const accCoords = [];
 activity.forEach(location => {
-     var d = location.properties.date;
+     var d = location.properties.startDate;
      accomodation.forEach(acc => {
           if (d >= acc.properties.startDate && d < acc.properties.endDate) {
 
