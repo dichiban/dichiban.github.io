@@ -1,0 +1,10 @@
+---
+layout: default
+title: Maps
+permalink: /travel-maps/
+---
+
+  {% for map in site.maps %}
+      <h1><a href="{{ map.url }}">{{ map.title }}</a></h1>
+      <a href="{{ map.url }}" class="read-more">Read More</a>
+  {% endfor %}
