@@ -358,6 +358,8 @@ details {
   background: #c0c0c0;;
   margin-bottom: .5rem;
   border-radius: 5px;
+  padding-left: .5rem;
+  padding-right: .5rem;
   color: black;
   outline: none;
   cursor: pointer;
@@ -387,6 +389,19 @@ summary:active {
   background: none;
 }
 
+// .accom-collapse {
+//   background: #ff9b44;
+// }
+
+// .accom-collapse[open] .accom-summary {
+//   background: #ff7800;
+// }
+
+.accom-collapse:focus,
+.accom-collapse:hover,
+.accom-collapse:active {
+  background: #F0B285;
+}
 
 .accom-collapse {
   background: #ff9b44;
@@ -400,22 +415,34 @@ summary:active {
 .accom-collapse:hover,
 .accom-collapse:active {
   background: #fd851b;
-  border-radius: 20px;
 }
 
+// .activity-collapse {
+//   background: #7fa6f0;
+// }
+
+// .activity-collapse[open] .activity-summary {
+//   background: #3479fa;
+// }
+
+// .activity-collapse:focus,
+// .activity-collapse:hover,
+// .activity-collapse:active {
+//   background: #588ef3;
+// }
 
 .activity-collapse {
-  background: #7fa6f0;
+  background: #D2E177;
 }
 
 .activity-collapse[open] .activity-summary {
-  background: #3479fa;
+  background: #cde43b;
 }
 
 .activity-collapse:focus,
 .activity-collapse:hover,
 .activity-collapse:active {
-  background: #588ef3;
+  background: #cfe255;
 }
 
 

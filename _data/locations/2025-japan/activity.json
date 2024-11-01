@@ -7,7 +7,11 @@
                 "type": "activity",
                 "name": "Forest Adventure NAGANO",
                 "address": "2471-608 Ageya, Nagano, 380-0888, Japan",
-                "startDate": "2025-04-24"           
+                "startDate": "2025-04-24",
+                "cost": 4000,
+                "currency": "yen",
+                "description": "Japan's Best Adventure Park! Zipline, Thrill Activities, Unforgettable Experience in Scenic Nature.",
+                "link": "https://maps.app.goo.gl/WpwuTvKssUmwzFqr6"    
             },
             "geometry": {
                 "type": "Point",
@@ -20,11 +24,73 @@
                 "type": "activity",
                 "name": "Jigokudani Yaen Koen",
                 "address": "6845 Yamanouchi-machi Shimotakai-gun Nagano Japan 381-0401",
-                "startDate": "2025-04-23"
+                "startDate": "2025-04-23",
+                "description": "The only place in the world where monkeys bathe in hot springs.",
+                "link": "https://maps.app.goo.gl/UGQk4xKpfuMsN81y8"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [36.732681796923, 138.46064780795385]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "type": "activity",
+                "name": "Shiraito Falls",
+                "address": "Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111, Japan",
+                "startDate": "2025-04-23",
+                "description": "Ranked among the most beautiful waterfalls in Japan",
+                "link": "https://maps.app.goo.gl/2F5841FJAmwqsxMg6"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [36.41026149128989, 138.59257180655487]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "type": "activity",
+                "name": "Narai Juku",
+                "address": "Narai, Shiojiri, Nagano 399-6303, Japan",
+                "startDate": "2025-04-24",
+                "description": "Narai-juku is a historic post town located in the Kiso Valley of Nagano",
+                "link": "https://maps.app.goo.gl/8hWYUkPdtx8U66VY7"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [35.96832574989168, 137.81451067790906]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "type": "activity",
+                "name": "Harunire Terrace",
+                "address": "2145ｰ5 Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111, Japan",
+                "startDate": "2025-04-21",
+                "description": "A small town in the forest based on the concept of \"everyday life in Karuizawa.\"",
+                "link": "https://maps.app.goo.gl/ET4wkXSW4FU7mqmo8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [36.35930291136597, 138.59022720902882]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "type": "activity",
+                "name": "Komoro-jō Castle Ruins - Kaikoen Park",
+                "address": "311 Tei, Komoro, Nagano 384-0804, Japan",
+                "startDate": "2025-04-21",
+                "description": "Sakura Trees",
+                "link": "https://maps.app.goo.gl/taJwjTqjMhpNisMg9"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [36.32712276549572, 138.4175356711735]
             }
         }
     ]

@@ -10,7 +10,11 @@
                 "startDate": "2025-04-23",
                 "endDate": "2025-04-24",
                 "checkIn": "15:00",
-                "checkOut": "10:00"
+                "checkOut": "10:00",
+                "notes": "",
+                "cost": 261.64,
+                "currency": "AUD",
+                "link": "https://maps.app.goo.gl/xeK7TrXh2EqUqyRL8"
             },
             "geometry": {
                 "type": "Point",
@@ -26,7 +30,11 @@
                 "startDate": "2025-04-21",
                 "endDate": "2025-04-23",
                 "checkIn": "15:00",
-                "checkOut": "10:00"
+                "checkOut": "10:00",
+                "notes": "",
+                "cost": 10000,
+                "currency": "yen",
+                "link": "https://maps.app.goo.gl/RBL6dn8x3Z55ygMF7"
             },
             "geometry": {
                 "type": "Point",
@@ -42,7 +50,10 @@
                 "startDate": "2025-04-24",
                 "endDate": "2025-04-26",
                 "checkIn": "15:00",
-                "checkOut": "10:00"
+                "checkOut": "10:00",
+                "notes": "",
+                "cost": 0.0,
+                "currency": "AUD"
             },
             "geometry": {
                 "type": "Point",
@@ -58,7 +69,10 @@
                 "startDate": "2025-04-16",
                 "endDate": "2025-04-21",
                 "checkIn": "15:00",
-                "checkOut": "10:00"
+                "checkOut": "10:00",
+                "notes": "",
+                "cost": 0.00,
+                "currency": "yen"
             },
             "geometry": {
                 "type": "Point",
@@ -74,7 +88,10 @@
                 "startDate": "2025-04-26",
                 "endDate": "2025-05-01",
                 "checkIn": "15:00",
-                "checkOut": "10:00"
+                "checkOut": "10:00",
+                "notes": "",
+                "cost": 0.00,
+                "currency": "yen"
             },
             "geometry": {
                 "type": "Point",
