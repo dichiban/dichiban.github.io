@@ -1,97 +1,170 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "activity",
-                "name": "Forest Adventure NAGANO",
-                "address": "2471-608 Ageya, Nagano, 380-0888, Japan",
-                "startDate": "2025-04-24",
-                "cost": 4000,
-                "currency": "yen",
-                "description": "Japan's Best Adventure Park! Zipline, Thrill Activities, Unforgettable Experience in Scenic Nature.",
-                "link": "https://maps.app.goo.gl/WpwuTvKssUmwzFqr6"    
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [36.70320419520441, 138.14311049758572]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "activity",
-                "name": "Jigokudani Yaen Koen",
-                "address": "6845 Yamanouchi-machi Shimotakai-gun Nagano Japan 381-0401",
-                "startDate": "2025-04-23",
-                "description": "The only place in the world where monkeys bathe in hot springs.",
-                "link": "https://maps.app.goo.gl/UGQk4xKpfuMsN81y8"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [36.732681796923, 138.46064780795385]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "activity",
-                "name": "Shiraito Falls",
-                "address": "Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111, Japan",
-                "startDate": "2025-04-23",
-                "description": "Ranked among the most beautiful waterfalls in Japan",
-                "link": "https://maps.app.goo.gl/2F5841FJAmwqsxMg6"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [36.41026149128989, 138.59257180655487]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "activity",
-                "name": "Narai Juku",
-                "address": "Narai, Shiojiri, Nagano 399-6303, Japan",
-                "startDate": "2025-04-24",
-                "description": "Narai-juku is a historic post town located in the Kiso Valley of Nagano",
-                "link": "https://maps.app.goo.gl/8hWYUkPdtx8U66VY7"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [35.96832574989168, 137.81451067790906]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "activity",
-                "name": "Harunire Terrace",
-                "address": "2145ｰ5 Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111, Japan",
-                "startDate": "2025-04-21",
-                "description": "A small town in the forest based on the concept of \"everyday life in Karuizawa.\"",
-                "link": "https://maps.app.goo.gl/ET4wkXSW4FU7mqmo8"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [36.35930291136597, 138.59022720902882]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "activity",
-                "name": "Komoro-jō Castle Ruins - Kaikoen Park",
-                "address": "311 Tei, Komoro, Nagano 384-0804, Japan",
-                "startDate": "2025-04-21",
-                "description": "Sakura Trees",
-                "link": "https://maps.app.goo.gl/taJwjTqjMhpNisMg9"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [36.32712276549572, 138.4175356711735]
-            }
-        }
-    ]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Lake Kawaguchiko",
+        "address": "Fujikawaguchiko, Minamitsuru District, Yamanashi, Japan",
+        "startDate": "2025-04-18",
+        "description": "Great views of Mt. Fuji",
+        "link": "https://maps.app.goo.gl/Vcv3Y7NX1PHZvzYr9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.51917996458892, 138.77071193308842]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Hiroshi Senju Museum Karuizawa",
+        "address": "815 Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111, Japan",
+        "startDate": "2025-04-21",
+        "description": "Museum",
+        "link": "https://maps.app.goo.gl/w8CRQPUS2mKvmfes9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.33541046411829, 138.59734986442302]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Karuizawa Prince Shopping Plaza",
+        "address": "Karuizawa, Kitasaku District, Nagano 389-0102, Japan",
+        "startDate": "2025-04-21",
+        "description": "Big shopping plaza",
+        "link": "https://maps.app.goo.gl/wjMbPVSreQ1D8LB59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.340707882765294, 138.63592537312599]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Usui Pass",
+        "address": "0307 379 Matsuidamachi Sakamoto, Annaka, Gunma 379-0307, Japan",
+        "startDate": "2025-04-22",
+        "description": "Tunnels and bridges",
+        "link": "https://maps.app.goo.gl/PFxJoFGwnpSPJMLQ8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.35444169788012, 138.68442304059695]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Shiraito Falls",
+        "address": "Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111, Japan",
+        "startDate": "2025-04-22",
+        "description": "Ranked among the most beautiful waterfalls in Japan",
+        "link": "https://maps.app.goo.gl/2F5841FJAmwqsxMg6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.41026149128989, 138.59257180655487]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Harunire Terrace",
+        "address": "2145ｰ5 Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111, Japan",
+        "startDate": "2025-04-22",
+        "description": "A small town in the forest based on the concept of \"everyday life in Karuizawa.\"",
+        "link": "https://maps.app.goo.gl/ET4wkXSW4FU7mqmo8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.35930291136597, 138.59022720902882]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Sainokawara Park",
+        "address": "Kusatsu, Agatsuma District, Gunma 377-1711, Japan",
+        "startDate": "2025-04-23",
+        "description": "This park offers a relaxing hike around an area rich with hot spring water.",
+        "link": "https://maps.app.goo.gl/YWduuGDwPKsNTAhr6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.62415247404691, 138.58964804592503]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Seirakuen Fishing",
+        "address": "464 Kusatsu, Agatsuma District, Gunma 377-1711, Japan",
+        "startDate": "2025-04-23",
+        "description": "Fish, cook and eat the fish",
+        "link": "https://maps.app.goo.gl/gJdjAXLneMzsMYFx9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.625584725969524, 138.5859276702101]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Jigokudani Yaen Koen",
+        "address": "6845 Yamanouchi-machi Shimotakai-gun Nagano Japan 381-0401",
+        "startDate": "2025-04-24",
+        "description": "The only place in the world where monkeys bathe in hot springs.",
+        "link": "https://maps.app.goo.gl/UGQk4xKpfuMsN81y8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.732681796923, 138.46064780795385]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Matsumoto Castle",
+        "address": "4-1 Marunouchi, Matsumoto, Nagano 390-0873, Japan",
+        "startDate": "2025-04-24",
+        "description": "Castle",
+        "link": "https://maps.app.goo.gl/Gdmbf2aoEyvjYa8FA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.23865729915093, 137.96883789212868]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "activity",
+        "name": "Narai Juku",
+        "address": "Narai, Shiojiri, Nagano 399-6303, Japan",
+        "startDate": "2025-04-25",
+        "description": "Narai-juku is a historic post town located in the Kiso Valley of Nagano",
+        "link": "https://maps.app.goo.gl/8hWYUkPdtx8U66VY7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.96832574989168, 137.81451067790906]
+      }
+    }
+  ]
 }

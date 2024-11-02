@@ -19,44 +19,116 @@ var Esri_WorldStreetMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/re
 });
 
 Esri_WorldStreetMap.addTo(map);
-var accomodation = {{ site.data.locations.2025-japan.accomodation.features | sort: 'properties.startDate' | jsonify }}
-var activity     = {{ site.data.locations.2025-japan.activity.features     | sort: 'properties.startDate' | jsonify }}
+var accomodations = {{ site.data.locations.2025-japan.accomodation.features | sort: 'properties.startDate' | jsonify }}
+var activities     = {{ site.data.locations.2025-japan.activity.features     | sort: 'properties.startDate' | jsonify }}
 
-const pathCoords = [];
-accomodation.forEach(location => {
-     var coord = location.geometry.coordinates;
-     pathCoords.push([coord[0], coord[1]]);
+t1_hotel = "Some Tokyo Hotel";
+apa_hotel = "APA Hotel Karuizawa Ekimae Karuizawaso";
+kanemidori = "Kanemidori";
+matsumoto = "Airbnb Home in Matsumoto";
+
+var journey = [t1_hotel, "Lake Kawaguchiko", t1_hotel,
+               apa_hotel, "Hiroshi Senju Museum Karuizawa", apa_hotel,
+               "Karuizawa Prince Shopping Plaza", apa_hotel,
+               "Usui Pass", "Shiraito Falls", "Harunire Terrace", apa_hotel,
+               kanemidori, "Sainokawara Park", "Seirakuen Fishing", kanemidori,
+               "Jigokudani Yaen Koen", "Matsumoto Castle", matsumoto,
+               "Narai Juku", "Khang's House"];
+
+var accomMap = {};
+
+for (let i = 0; i < accomodations.length; i++)
+{
+  accomMap[accomodations[i].properties.name] = accomodations[i];
+}
+
+var activityMap = {};
+
+for (let i = 0; i < activities.length; i++)
+{
+  activityMap[activities[i].properties.name] = activities[i];
+}
+
+const activityCoords = [];
+const accomCoords = []
+
+const activityToAccom = [];
+const accomToActivity = [];
+
+for (let i = 1; i < journey.length-1; i++) {
+  const j1 = journey[i-1];
+  const j2 = journey[i];
+  const j3 = journey[i+1];
+
+  if (j1 == j3)
+  {
+    console.log(j1);
+  }
+}
+
+const allPaths = []
+var prevType = "accomodation";
+var prevCoords = null;
+journey.forEach(place => {
+  var details = null
+  var value = 0;
+  var value2 = 1;
+  if (place in activityMap) {
+    details = activityMap[place];
+  }
+
+  if (place in accomMap) {
+    details = accomMap[place];
+    value = 1;
+    value2 = 0;
+  }
+
+  var coords = details.geometry.coordinates;
+  if (prevCoords === null) {
+    prevCoords = coords;
+    return;
+  }
+
+  var type = details.properties.type;
+  if (prevType != type)
+  {
+    prevType = type;
+    allPaths.push([
+      [prevCoords[0], prevCoords[1], value], 
+      [coords[0],     coords[1],     value2]
+    ]);
+  } else {
+    allPaths.push([
+      [prevCoords[0], prevCoords[1], value2], 
+      [coords[0],     coords[1],     value2]
+    ]);  
+  }
+
+  prevCoords = coords;
 });
 
-const accCoords = [];
-activity.forEach(location => {
-     var d = location.properties.startDate;
-     accomodation.forEach(acc => {
-          if (d >= acc.properties.startDate && d < acc.properties.endDate) {
 
-               var c1 = location.geometry.coordinates;
-               var c2 = acc.geometry.coordinates;
-               accCoords.push([[c2[0], c2[1]], [c1[0], c1[1]]]);
-          }
-     });
-});
-
-accCoords.forEach(line => {
-     L.polyline(line, {
-          color: 'black',
-          weight: 5,   // Thicker than the main polyline
-          opacity: 1}
-          ).addTo(map);
-     L.polyline(line, {color: "#cde43b"}).addTo(map);
-
+allPaths.forEach(line => {
+  L.hotline(line, {
+    min: 0,
+    max: 1,
+    palette: {
+      0.0: '#ff7800', // orange
+      1.0: '#cde43b'  // green
+    },
+    weight: 5,
+    outlineColor: '#000000',
+    outlineWidth: 1
+  }).addTo(map);
 })
+
 var accomMarkerOptions = {
     radius: 10,
     fillColor: "#ff7800",
     color: "#000",
     weight: 1,
     opacity: 1,
-    fillOpacity: 0.8
+    fillOpacity: 1
 };
 
 var activityMarkerOptions = {
@@ -65,16 +137,9 @@ var activityMarkerOptions = {
     color: "#000",
     weight: 1,
     opacity: 1,
-    fillOpacity: 0.8
+    fillOpacity: 1
 };
 
-var outline = L.polyline(pathCoords, {
-    color: 'black',
-    weight: 5,   // Thicker than the main polyline
-    opacity: 1
-}).addTo(map);
-
-var pathLine = L.polyline(pathCoords, {color: "#ff7800"}).addTo(map);
 
 const accomMarkers = {};
 const activityMarkers = {};
@@ -93,7 +158,7 @@ const activityMarkers = {};
 <details class="accom-collapse" collapse-id="{{ feature.properties.name }}">
   <summary class="accom-summary"><b>{{ feature.properties.name }}</b><div class="right">{{ feature.properties.startDate | date: "%d %B, %Y" }} - {{ feature.properties.endDate | date: "%d %B, %Y" }}</div></summary>
   <div class="accom-item" data-id="{{ feature.properties.name }}">
-  <div><b>Address</b> : <a href="{{ feature.properties.link }}">{{ feature.properties.address }}</a></div>
+  <div><b>Address</b> : <a href="{{ feature.properties.link }}" target="_blank">{{ feature.properties.address }}</a></div>
   <div><b>Check-in</b> : {{ feature.properties.checkIn }}</div>
   <div><b>Check-out</b> : {{ feature.properties.checkOut }}</div>
   <div><b>Cost</b> : {{ feature.properties.cost }} {{ feature.properties.currency }}</div>
@@ -104,7 +169,7 @@ const activityMarkers = {};
 <details class="activity-collapse" collapse-id="{{ feature.properties.name }}">
   <summary class="activity-summary"><b>{{ feature.properties.name }}</b><div class="right">{{ feature.properties.startDate | date: "%d %B, %Y" }}</div></summary>
   <div class="activity-item" data-id="{{ feature.properties.name }}">
-  <div><b>Address</b> : <a href="{{ feature.properties.link }}">{{ feature.properties.address }}</a></div>
+  <div><b>Address</b> : <a href="{{ feature.properties.link }}" target="_blank">{{ feature.properties.address }}</a></div>
   <div><b>Description</b> : {{ feature.properties.description }}</div>
   {% if feature.properties.cost %}
   <div><b>Price</b> : {{ feature.properties.cost }} {{ feature.properties.currency }}</div>
@@ -149,8 +214,8 @@ function resetMarkersStyles() {
 }
 
 function resetLocationStyles() {
-     resetAccomLocationStyles();
-     resetActivityLocationStyles();
+  resetAccomLocationStyles();
+  resetActivityLocationStyles();
 }
 
 // Function to highlight a specific marker and its HTML element
@@ -177,36 +242,63 @@ function highlightLocation(marker, itemId) {
   }
 }
 
-accomodation.forEach(location => {
-     var coord = location.geometry.coordinates;
-     const marker = L.circleMarker([coord[0], coord[1]], 
-     accomMarkerOptions).addTo(map)
-     accomMarkers[location.properties.name] = marker
-       // Add a click event listener to the marker
-     marker.bindPopup(location.properties.name);
-     marker.on('click', () => {
-          // Reset all markers and location styles
-          resetMarkersStyles();
-          resetLocationStyles();
-          // Highlight the clicked marker and corresponding location div
-          highlightLocation(marker, location.properties.name);
-     });
-});
+const popupOptions = {
+  className: 'clickable-popup'  // Add the custom class to this popup
+};
 
-activity.forEach(location => {
+accomodations.forEach(location => {
   var coord = location.geometry.coordinates;
   const marker = L.circleMarker([coord[0], coord[1]], 
-  activityMarkerOptions).addTo(map)
-  activityMarkers[location.properties.name] = marker
+  accomMarkerOptions).addTo(map)
+  accomMarkers[location.properties.name] = marker
     // Add a click event listener to the marker
-  marker.bindPopup(location.properties.name);
+  var name = location.properties.name;
+  marker.bindPopup(name, popupOptions);
   marker.on('click', () => {
     // Reset all markers and location styles
     resetMarkersStyles();
     resetLocationStyles();
     // Highlight the clicked marker and corresponding location div
-    highlightLocation(marker, location.properties.name);
+    highlightLocation(marker, name);
   });
+});
+
+activities.forEach(location => {
+  var coord = location.geometry.coordinates;
+  const marker = L.circleMarker([coord[0], coord[1]], 
+  activityMarkerOptions).addTo(map)
+  activityMarkers[location.properties.name] = marker
+    // Add a click event listener to the marker
+  var name = location.properties.name;
+  marker.bindPopup(name, popupOptions);
+  marker.on('click', () => {
+    // Reset all markers and location styles
+    resetMarkersStyles();
+    resetLocationStyles();
+    // Highlight the clicked marker and corresponding location div
+    highlightLocation(marker, name);
+  });
+});
+
+
+map.on("popupopen", function (e) {
+    const popupElement = e.popup._container;
+    popupElement.addEventListener("click", function () {
+      console.log(e.popup.getContent());
+      var targetId = e.popup.getContent();
+      var summaryElement = document.querySelector(`.activity-collapse[collapse-id="${targetId}"]`);
+      // Scroll to the summary element
+      if (summaryElement) {
+          summaryElement.scrollIntoView({ behavior: "smooth" });
+          return;
+      } 
+  
+      summaryElement = document.querySelector(`.accom-collapse[collapse-id="${targetId}"]`);
+      if (summaryElement) {
+          summaryElement.scrollIntoView({ behavior: "smooth" });
+          return;
+      }
+    });
 });
 
 // Add click event listener to each HTML element
@@ -224,7 +316,7 @@ document.querySelectorAll('.accom-item').forEach(item => {
       highlightLocation(selectedMarker, markerId);
       
       // Optionally, pan and zoom to the marker
-      // map.setView(selectedMarker.getLatLng(), 15);
+      map.setView(selectedMarker.getLatLng());
     }
   });
 });
@@ -244,7 +336,7 @@ document.querySelectorAll('.activity-item').forEach(item => {
       highlightLocation(selectedMarker, markerId);
       
       // Optionally, pan and zoom to the marker
-      // map.setView(selectedMarker.getLatLng(), 15);
+      map.setView(selectedMarker.getLatLng());
     }
   });
 });

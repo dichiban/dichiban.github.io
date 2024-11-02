@@ -1,102 +1,102 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "accomodation",
-                "name": "Kanemidori",
-                "address": "162 Agatsuma Gun, Kusatsu-machi, Agatsuma-gun 377-1711 Gunma Prefecture",
-                "startDate": "2025-04-23",
-                "endDate": "2025-04-24",
-                "checkIn": "15:00",
-                "checkOut": "10:00",
-                "notes": "",
-                "cost": 261.64,
-                "currency": "AUD",
-                "link": "https://maps.app.goo.gl/xeK7TrXh2EqUqyRL8"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [36.62164039865114, 138.59823845954358]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "accomodation",
-                "name": "APA Hotel Karuizawa Ekimae Karuizawaso",
-                "address": "1178-1135 Karuizawa, Karuizawa-machi, Kitasaku-gun 389-0102 Nagano Prefecture",
-                "startDate": "2025-04-21",
-                "endDate": "2025-04-23",
-                "checkIn": "15:00",
-                "checkOut": "10:00",
-                "notes": "",
-                "cost": 10000,
-                "currency": "yen",
-                "link": "https://maps.app.goo.gl/RBL6dn8x3Z55ygMF7"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [36.34307612103204, 138.6383727334326]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "accomodation",
-                "name": "Some Nagano Place",
-                "address": "Something somwhere Nagano Prefecture",
-                "startDate": "2025-04-24",
-                "endDate": "2025-04-26",
-                "checkIn": "15:00",
-                "checkOut": "10:00",
-                "notes": "",
-                "cost": 0.0,
-                "currency": "AUD"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [36.40253763187223, 137.97704583722657]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "accomodation",
-                "name": "Some Tokyo Hotel",
-                "address": "somethin something 12123123123 Tokyo Prefecture",
-                "startDate": "2025-04-16",
-                "endDate": "2025-04-21",
-                "checkIn": "15:00",
-                "checkOut": "10:00",
-                "notes": "",
-                "cost": 0.00,
-                "currency": "yen"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [35.69240086609531, 139.70427673553453]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "type": "accomodation",
-                "name": "Another Tokyo Hotel",
-                "address": "somethin something 12123123123 Tokyo Prefecture",
-                "startDate": "2025-04-26",
-                "endDate": "2025-05-01",
-                "checkIn": "15:00",
-                "checkOut": "10:00",
-                "notes": "",
-                "cost": 0.00,
-                "currency": "yen"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [35.65401375262792, 139.73983740235428]
-            }
-        }
-    ]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "accomodation",
+        "name": "Some Tokyo Hotel",
+        "address": "somethin something 12123123123 Tokyo Prefecture",
+        "startDate": "2025-04-16",
+        "endDate": "2025-04-21",
+        "checkIn": "15:00",
+        "checkOut": "10:00",
+        "notes": "",
+        "cost": 0.0,
+        "currency": "yen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.69240086609531, 139.70427673553453]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "accomodation",
+        "name": "APA Hotel Karuizawa Ekimae Karuizawaso",
+        "address": "1178-1135 Karuizawa, Karuizawa-machi, Kitasaku-gun 389-0102 Nagano Prefecture",
+        "startDate": "2025-04-21",
+        "endDate": "2025-04-23",
+        "checkIn": "15:00",
+        "checkOut": "10:00",
+        "notes": "",
+        "cost": 10000,
+        "currency": "yen",
+        "link": "https://maps.app.goo.gl/RBL6dn8x3Z55ygMF7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.34307612103204, 138.6383727334326]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "accomodation",
+        "name": "Kanemidori",
+        "address": "162 Agatsuma Gun, Kusatsu-machi, Agatsuma-gun 377-1711 Gunma Prefecture",
+        "startDate": "2025-04-23",
+        "endDate": "2025-04-24",
+        "checkIn": "15:00",
+        "checkOut": "10:00",
+        "notes": "",
+        "cost": 261.64,
+        "currency": "AUD",
+        "link": "https://maps.app.goo.gl/xeK7TrXh2EqUqyRL8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.62164039865114, 138.59823845954358]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "accomodation",
+        "name": "Airbnb Home in Matsumoto",
+        "address": "1476 Satoyamabe, Matsumoto, Nagano 390-0221, Japan",
+        "startDate": "2025-04-24",
+        "endDate": "2025-04-26",
+        "checkIn": "16:00",
+        "checkOut": "10:00",
+        "notes": "",
+        "cost": 138.41,
+        "currency": "AUD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.242035063273335, 137.9994156711619]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "accomodation",
+        "name": "Khang's House",
+        "address": "5-chōme-42-7 Higashiikebukuro, Toshima City, Tokyo Prefecture 170-0013, Japan",
+        "startDate": "2025-04-26",
+        "endDate": "2025-05-01",
+        "checkIn": "15:00",
+        "checkOut": "10:00",
+        "notes": "",
+        "cost": 323.468,
+        "currency": "AUD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.72713673307754, 139.72529511778515]
+      }
+    }
+  ]
 }
