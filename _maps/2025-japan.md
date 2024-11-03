@@ -288,7 +288,7 @@ activities.forEach(location => {
 
 
 map.on("popupopen", function (e) {
-    const popupElement = e.popup._container;
+    const popupElement = e.popup.getElement().querySelector('.leaflet-popup-content');
     popupElement.addEventListener("click", function () {
       console.log(e.popup.getContent());
       var targetId = e.popup.getContent();
