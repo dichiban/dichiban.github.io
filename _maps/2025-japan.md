@@ -174,6 +174,12 @@ const activityMarkers = {};
   {% if feature.properties.cost %}
   <div><b>Price</b> : {{ feature.properties.cost }} {{ feature.properties.currency }}</div>
   {% endif %}
+  {% if feature.properties.open %}
+  <div><b>Open</b> : {{ feature.properties.open }}</div>
+  {% endif %}
+  {% if feature.properties.close %}
+  <div><b>Close</b> : {{ feature.properties.close }}</div>
+  {% endif %}
   </div>
 </details>
 {% endif %}

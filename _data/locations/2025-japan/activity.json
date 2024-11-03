@@ -24,7 +24,10 @@
         "address": "815 Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111, Japan",
         "startDate": "2025-04-21",
         "description": "Museum",
-        "link": "https://maps.app.goo.gl/w8CRQPUS2mKvmfes9"
+        "link": "https://maps.app.goo.gl/w8CRQPUS2mKvmfes9",
+        "notes": "Closed Tuesday",
+        "open": "9:00",
+        "close": "17:00"
       },
       "geometry": {
         "type": "Point",
@@ -39,7 +42,9 @@
         "address": "Karuizawa, Kitasaku District, Nagano 389-0102, Japan",
         "startDate": "2025-04-21",
         "description": "Big shopping plaza",
-        "link": "https://maps.app.goo.gl/wjMbPVSreQ1D8LB59"
+        "link": "https://maps.app.goo.gl/wjMbPVSreQ1D8LB59",
+        "open": "10:00",
+        "close": "19:00"
       },
       "geometry": {
         "type": "Point",
@@ -84,7 +89,9 @@
         "address": "2145ｰ5 Nagakura, Karuizawa, Kitasaku District, Nagano 389-0111, Japan",
         "startDate": "2025-04-22",
         "description": "A small town in the forest based on the concept of \"everyday life in Karuizawa.\"",
-        "link": "https://maps.app.goo.gl/ET4wkXSW4FU7mqmo8"
+        "link": "https://maps.app.goo.gl/ET4wkXSW4FU7mqmo8",
+        "open": "10:00",
+        "close": "18:00"
       },
       "geometry": {
         "type": "Point",
@@ -114,7 +121,9 @@
         "address": "464 Kusatsu, Agatsuma District, Gunma 377-1711, Japan",
         "startDate": "2025-04-23",
         "description": "Fish, cook and eat the fish",
-        "link": "https://maps.app.goo.gl/gJdjAXLneMzsMYFx9"
+        "link": "https://maps.app.goo.gl/gJdjAXLneMzsMYFx9",
+        "open": "10:00",
+        "close": "17:00"
       },
       "geometry": {
         "type": "Point",
@@ -129,7 +138,9 @@
         "address": "6845 Yamanouchi-machi Shimotakai-gun Nagano Japan 381-0401",
         "startDate": "2025-04-24",
         "description": "The only place in the world where monkeys bathe in hot springs.",
-        "link": "https://maps.app.goo.gl/UGQk4xKpfuMsN81y8"
+        "link": "https://maps.app.goo.gl/UGQk4xKpfuMsN81y8",
+        "open": "9:00",
+        "close": "16:00"
       },
       "geometry": {
         "type": "Point",
@@ -144,7 +155,9 @@
         "address": "4-1 Marunouchi, Matsumoto, Nagano 390-0873, Japan",
         "startDate": "2025-04-24",
         "description": "Castle",
-        "link": "https://maps.app.goo.gl/Gdmbf2aoEyvjYa8FA"
+        "link": "https://maps.app.goo.gl/Gdmbf2aoEyvjYa8FA",
+        "open": "8:30",
+        "close": "16:30"
       },
       "geometry": {
         "type": "Point",
@@ -159,7 +172,9 @@
         "address": "Narai, Shiojiri, Nagano 399-6303, Japan",
         "startDate": "2025-04-25",
         "description": "Narai-juku is a historic post town located in the Kiso Valley of Nagano",
-        "link": "https://maps.app.goo.gl/8hWYUkPdtx8U66VY7"
+        "link": "https://maps.app.goo.gl/8hWYUkPdtx8U66VY7",
+        "open": "9:00",
+        "close": "17:00"
       },
       "geometry": {
         "type": "Point",
