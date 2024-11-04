@@ -5,19 +5,19 @@
       "type": "Feature",
       "properties": {
         "type": "accomodation",
-        "name": "Some Tokyo Hotel",
-        "address": "somethin something 12123123123 Tokyo Prefecture",
+        "name": "Le Petit Tokyo",
+        "address": "2-chōme-45-8 Nishinippori Le Petit Tokyo, Arakawa City, Tokyo Prefecture 116-0013, Japan",
         "startDate": "2025-04-16",
         "endDate": "2025-04-21",
         "checkIn": "15:00",
-        "checkOut": "10:00",
+        "checkOut": "11:00",
         "notes": "",
-        "cost": 0.0,
-        "currency": "yen"
+        "cost": 386.13,
+        "currency": "AUD"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [35.69240086609531, 139.70427673553453]
+        "coordinates": [35.73166311099037, 139.77041040477135]
       }
     },
     {

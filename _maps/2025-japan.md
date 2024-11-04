@@ -22,7 +22,7 @@ Esri_WorldStreetMap.addTo(map);
 var accomodations = {{ site.data.locations.2025-japan.accomodation.features | sort: 'properties.startDate' | jsonify }}
 var activities     = {{ site.data.locations.2025-japan.activity.features     | sort: 'properties.startDate' | jsonify }}
 
-t1_hotel = "Some Tokyo Hotel";
+t1_hotel = "Le Petit Tokyo";
 apa_hotel = "APA Hotel Karuizawa Ekimae Karuizawaso";
 kanemidori = "Kanemidori";
 matsumoto = "Airbnb Home in Matsumoto";
