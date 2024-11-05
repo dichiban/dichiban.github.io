@@ -367,96 +367,65 @@ table tbody tr:nth-child(odd) {
   float: left;
 }
 
-details {
-  margin: 0 auto;
-  background: #c0c0c0;
-  margin-bottom: 0.5rem;
-  border-radius: 5px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  color: black;
-  outline: none;
-  cursor: pointer;
+summary {
+  padding: 5px 5px;
+  font-weight: bold;
+  border-radius: 0 0 5px 5px;
 }
 
-summary {
-  padding: 1rem;
-  display: block;
-  padding-left: 2.2rem;
-  position: relative;
-  cursor: pointer;
+summary::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid #15171b;
+  transition: 0.2s;
+}
+
+details[open] > summary {
+  border-bottom: 2px solid #fff9f1;
+}
+
+details[open] > summary::after {
+  transform: rotate(-180deg);
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 details[open] summary {
-  background: #a5a5a5;
+  border-radius: 5px 5px 0 0;
 }
 
-details:focus,
-details:hover,
-details:active {
-  background: #919191;
-}
-
-summary:focus,
-summary:hover,
-summary:active {
-  background: none;
-}
-
-// .accom-collapse {
-//   background: #ff9b44;
-// }
-
-// .accom-collapse[open] .accom-summary {
-//   background: #ff7800;
-// }
-
-.accom-collapse:focus,
-.accom-collapse:hover,
-.accom-collapse:active {
-  background: #f0b285;
+details {
+  background: #eeebdc;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.1em;
 }
 
 .accom-collapse {
   background: #ff9b44;
 }
 
-.accom-collapse[open] .accom-summary {
-  background: #ff7800;
+.accom-item {
+  color: white;
+  background: #703a0b;
+  padding: 0.3em;
+  margin: 0.3em;
+  border-radius: 5px;
 }
-
-.accom-collapse:focus,
-.accom-collapse:hover,
-.accom-collapse:active {
-  background: #fd851b;
-}
-
-// .activity-collapse {
-//   background: #7fa6f0;
-// }
-
-// .activity-collapse[open] .activity-summary {
-//   background: #3479fa;
-// }
-
-// .activity-collapse:focus,
-// .activity-collapse:hover,
-// .activity-collapse:active {
-//   background: #588ef3;
-// }
-
 .activity-collapse {
   background: #d2e177;
 }
 
-.activity-collapse[open] .activity-summary {
-  background: #cde43b;
-}
-
-.activity-collapse:focus,
-.activity-collapse:hover,
-.activity-collapse:active {
-  background: #cfe255;
+.activity-item {
+  color: white;
+  background: #515822;
+  padding: 0.3em;
+  margin: 0.3em;
+  border-radius: 5px;
 }
 
 .clickable-popup .leaflet-popup-content-wrapper {
